@@ -14,18 +14,19 @@
 const pool = mysql.createPool(
     process.env.JAWSDB_URL ?? {
         host: 'localhost',  
-        user: 'root',           // 본인의 myslq user id
-        database: 'databasename',      // 본인이 만든 데이터베이스 이름
-        password: 'password',       // 본인의 mysql password
+        user: 'root', // 본인의 myslq user id
+        database: 'databasename', // 본인이 만든 데이터베이스 이름
+        password: 'password', // 본인의 mysql password
         waitForConnection: true,
         connnectionLimit: 10,
         queueLimit: 0
     }
 );
-<code>
-<pre>
+</code>
+</pre>
 
 <br>
+
 ## <span style="color:red">테이블 작성법</span>
 
 이름|과|전공|학번
